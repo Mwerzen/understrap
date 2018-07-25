@@ -25,3 +25,8 @@ Thumbs.db
 *.bak
 
 *.swp
+
+package-lock.json
+
+.idea/*
+
