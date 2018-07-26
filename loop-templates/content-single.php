@@ -10,10 +10,9 @@
 
     <nav aria-label="breadcrumb">
         <ol id="breadcrumb" class="breadcrumb p-0 mb-0">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Blog</a></li>
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item"><a href="<?php echo get_page_link( get_page_by_title( "Blog" )->ID ); ?>">Blog</a></li>
             <li class="breadcrumb-item"><a href="#"><?php the_category(' '); ?></a></li>
-            <li class="breadcrumb-item"><a href="#"><?php the_title(); ?></a></li>
         </ol>
     </nav>
 
@@ -29,7 +28,9 @@
 
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+    <div class="row justify-content-center">
+	    <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+    </div>
 
 	<div class="entry-content">
 
