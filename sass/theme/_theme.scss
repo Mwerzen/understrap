@@ -15,7 +15,6 @@ a {
 }
 
 body {
-  p {
-    font: $font-body;
-  }
+  font-family: $font-body;
+  color: $theme-black;
 }

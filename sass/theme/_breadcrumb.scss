@@ -1,0 +1,14 @@
+
+#breadcrumb {
+  background-color: $theme-transparent;
+  font-family: $font-accent;
+  color: $theme-grey;
+
+  a {
+    color: $theme-grey;
+  }
+
+  > li + li:before {
+    content: $breadcrumb-divider;
+  }
+}

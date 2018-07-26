@@ -26,32 +26,32 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="site-info">
 
                         <div class="row" id="footer-links">
-                            <div class="col-md-3">
-                                <h6>Airplane Buying Guide</h6>
+                            <div class="col-md-3 mb-3">
+                                <h6 class="mb-1">Airplane Buying Guide</h6>
                                 <ul class="m-0 p-0">
                                     <li><a href="/sample-page/">Picking the Best Airplane</a></li>
                                     <li><a href="/">Picking the Best Airplane</a></li>
                                     <li><a href="/">Picking the Best Airplane</a></li>
                                 </ul>
                             </div>
-                            <div class="col-md-3">
-                                <h6>Waterski Buying Guide</h6>
+                            <div class="col-md-3 mb-3">
+                                <h6 class="mb-1">Airplane Buying Guide</h6>
                                 <ul class="m-0 p-0">
                                     <li><a href="/">Picking the Best Airplane</a></li>
                                     <li><a href="/">Picking the Best Airplane</a></li>
                                     <li><a href="/">Picking the Best Airplane</a></li>
                                 </ul>
                             </div>
-                            <div class="col-md-3">
-                                <h6>Jetpack Buying Guide</h6>
+                            <div class="col-md-3 mb-3">
+                                <h6 class="mb-1">Airplane Buying Guide</h6>
                                 <ul class="m-0 p-0">
                                     <li><a href="/">Picking the Best Airplane</a></li>
                                     <li><a href="/">Picking the Best Airplane</a></li>
                                     <li><a href="/">Picking the Best Airplane</a></li>
                                 </ul>
                             </div>
-                            <div class="col-md-3">
-                                <h6>Car Buying Guide</h6>
+                            <div class="col-md-3 mb-3">
+                                <h6 class="mb-1">Airplane Buying Guide</h6>
                                 <ul class="m-0 p-0">
                                     <li><a href="/">Picking the Best Airplane</a></li>
                                     <li><a href="/">Picking the Best Airplane</a></li>

@@ -2,8 +2,8 @@
   margin-top: 2rem;
 
   p {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1rem !important;
+    line-height: $theme-line-height !important;
   }
 
   ol {
@@ -13,10 +13,6 @@
   }
 
   li {
-    //box-shadow: 1px 1px 5px rgba(0,0,0,.1);
-    //border-radius: .25rem;
-    //background-clip: border-box;
-
     padding-left: 1.25rem;
 
     article {
@@ -30,7 +26,7 @@
 
     .comment-meta {
       .comment-author {
-        color: black;
+        color: $theme-black;
         font-size: 1.25rem;
 
         .says {
@@ -45,33 +41,33 @@
       }
     }
 
-    //&.depth-1, .depth-2, .depth-3, .depth-4 {
     .comment-body {
-      border-radius: .75rem;
       margin-right: .35rem;
       margin-bottom: .35rem;
-      padding-left: 1rem;
 
-      border-left: 3px solid #dbdaec;
-      border-bottom: 1px solid #dbdaec;
-
-      background-color: rgba(0, 0, 0, 0.025);
-      border-color: rgba(0, 0, 0, 0.1);
+      border: 1px solid $theme-grey-light;
+      border-left-width: .2rem;
+      border-left-color: $theme-primary-light !important;
+      border-radius: .35rem;
 
       padding: .5rem 1rem .5rem 1rem;
 
       .reply {
         text-align: right;
-
       }
-
     }
   }
 
   #respond {
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       margin-bottom: 0rem;
+    }
+
+    margin-top: 2rem;
+
+    #Comment {
+      font-family: $font-body;
     }
 
     .form-submit {
@@ -89,8 +85,5 @@
     }
 
   }
-
-
-
 
 }

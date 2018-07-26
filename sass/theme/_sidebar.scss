@@ -1,13 +1,11 @@
 
 #right-sidebar, #left-sidebar {
 
-  body {
-    font: $font-body;
-  }
+  font-family: $font-accent;
+
 
   .sidebar-card {
     border: none;
-
 
     #searchform {
       label {
@@ -21,11 +19,9 @@
 
       #s:focus {
         box-shadow: none;
-        webkit-box-shadow: none;
         border-color: $theme-primary-light;
       }
     }
-     
 
     .card-header {
       background-color: $theme-white;
@@ -35,6 +31,10 @@
       list-style-type: none;
       margin: 0;
       padding: 0;
+
+      li {
+        margin-bottom: .25rem;
+      }
     }
   }
 }

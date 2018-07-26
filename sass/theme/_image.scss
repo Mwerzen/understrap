@@ -1,0 +1,13 @@
+figure, p img, .wp-post-image {
+  padding: 2px;
+  background: $theme-transparent;
+  border: 1px solid $theme-grey-light;
+  box-shadow: 1px 1px 5px $theme-shadow;
+
+  figcaption {
+    font-family: $font-headline;
+    color: $theme-primary-light;
+    font-style: italic;
+    text-align: center;
+  }
+}

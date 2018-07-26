@@ -1,0 +1,34 @@
+#primary {
+  border-right: 1px solid $theme-grey-light;
+
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: $font-headline;
+    font-weight: bold;
+    color: $theme-primary;
+  }
+
+  .entry-title {
+    border-bottom: 1px solid $theme-grey-light;
+  }
+
+  .entry-meta {
+    font-family: $font-accent;
+    font-style: italic;
+    font-size: .9rem;
+    color: $theme-grey;
+
+    a {
+      color: $theme-grey;
+    }
+  }
+
+  p {
+    font-family: $font-body;
+    font-size: $theme-font-size;
+    line-height: $theme-line-height;
+  }
+
+  article {
+    margin-bottom: 1.25rem;
+  }
+}
