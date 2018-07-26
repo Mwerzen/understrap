@@ -1,0 +1,38 @@
+
+#wrapper-footer {
+
+  background-color: $theme-primary-light;
+  font-family: $font-body;
+  color: $theme-white-alpha-bright;
+
+  #footer-links, #footer-legal {
+    a {
+      color: $theme-white-alpha-bright;
+
+      &:hover {
+        color: $theme-white-alpha-dim;
+      }
+    }
+  }
+
+  #footer-links {
+
+    h1, h2, h3, h4, h5, h6 {
+      color: $theme-white;
+      font-weight: bold;
+      font-family: $font-headline;
+    }
+
+    ul {
+      list-style-type: none;
+      font-size: .8rem;
+    }
+
+  }
+
+  #footer-legal {
+    border-top: 1px solid $theme-primary;
+    font-size: .8rem;
+    color: $theme-white-alpha-bright;
+  }
+}

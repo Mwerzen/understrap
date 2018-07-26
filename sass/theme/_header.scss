@@ -1,0 +1,21 @@
+
+
+#wrapper-navbar {
+  background-color: $theme-primary-light !important;
+  font-family: $font-headline;
+
+  a {
+    color: $theme-white-alpha-bright;
+
+    &:hover {
+      color: $theme-white-alpha-dim;
+    }
+  }
+
+  .active {
+    a {
+      color: $theme-white !important;
+    }
+  }
+
+}

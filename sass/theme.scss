@@ -8,5 +8,11 @@
 @import "assets/underscores"; // <------- Underscores media styles
 
 // Any additional imported files //
-@import "theme/theme";  // <--------- That's where you can add your own design. Thats your part!
-@import "theme/contact-form7"; // Contact Form 7 - Bootstrap 4 support
+@import "theme/theme";
+@import "theme/contact-form7";
+@import "theme/header";
+@import "theme/sidebar";
+@import "theme/right-sidebar";
+@import "theme/left-sidebar";
+@import "theme/comments";
+@import "theme/footer";

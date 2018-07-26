@@ -13,37 +13,73 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<div class="wrapper" id="wrapper-footer">
+<div class="wrapper navbar-fixed-bottom" id="wrapper-footer">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
 
-		<div class="row">
+        <footer class="site-footer" id="colophon">
 
-			<div class="col-md-12">
+		    <div class="row">
 
-				<footer class="site-footer" id="colophon">
+			    <div class="col-md-12">
 
 					<div class="site-info">
 
-							<a href="<?php  echo esc_url( __( 'http://wordpress.org/','understrap' ) ); ?>"><?php printf( 
-							/* translators:*/
-							esc_html__( 'Proudly powered by %s', 'understrap' ),'WordPress' ); ?></a>
-								<span class="sep"> | </span>
-					
-							<?php printf( // WPCS: XSS ok.
-							/* translators:*/
-								esc_html__( 'Theme: %1$s by %2$s.', 'understrap' ), $the_theme->get( 'Name' ),  '<a href="'.esc_url( __('http://understrap.com', 'understrap')).'">understrap.com</a>' ); ?> 
-				
-							(<?php printf( // WPCS: XSS ok.
-							/* translators:*/
-								esc_html__( 'Version: %1$s', 'understrap' ), $the_theme->get( 'Version' ) ); ?>)
+                        <div class="row" id="footer-links">
+                            <div class="col-md-3">
+                                <h6>Airplane Buying Guide</h6>
+                                <ul class="m-0 p-0">
+                                    <li><a href="/sample-page/">Picking the Best Airplane</a></li>
+                                    <li><a href="/">Picking the Best Airplane</a></li>
+                                    <li><a href="/">Picking the Best Airplane</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <h6>Waterski Buying Guide</h6>
+                                <ul class="m-0 p-0">
+                                    <li><a href="/">Picking the Best Airplane</a></li>
+                                    <li><a href="/">Picking the Best Airplane</a></li>
+                                    <li><a href="/">Picking the Best Airplane</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <h6>Jetpack Buying Guide</h6>
+                                <ul class="m-0 p-0">
+                                    <li><a href="/">Picking the Best Airplane</a></li>
+                                    <li><a href="/">Picking the Best Airplane</a></li>
+                                    <li><a href="/">Picking the Best Airplane</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <h6>Car Buying Guide</h6>
+                                <ul class="m-0 p-0">
+                                    <li><a href="/">Picking the Best Airplane</a></li>
+                                    <li><a href="/">Picking the Best Airplane</a></li>
+                                    <li><a href="/">Picking the Best Airplane</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row mt-5 pt-3" id="footer-legal">
+                            <div class="col-md-4" id="footer-copy">
+                                Copyright © by Mike Werzen <?php the_time('Y'); ?>
+                            </div>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-5" id="footer-policies">
+                                <a href>Disclaimer</a> &bull;
+                                <a href>Cookie Policy</a> &bull;
+                                <a href>Privacy Policy</a> &bull;
+                                <a href>Terms and Conditions</a>
+                            </div>
+
+                        </div>
 					</div><!-- .site-info -->
 
-				</footer><!-- #colophon -->
+			    </div><!--col end -->
 
-			</div><!--col end -->
+		    </div><!-- row end -->
 
-		</div><!-- row end -->
+        </footer>
 
 	</div><!-- container end -->
 

@@ -1,0 +1,96 @@
+#comments {
+  margin-top: 2rem;
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  ol {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: .35rem;
+  }
+
+  li {
+    //box-shadow: 1px 1px 5px rgba(0,0,0,.1);
+    //border-radius: .25rem;
+    //background-clip: border-box;
+
+    padding-left: 1.25rem;
+
+    article {
+      margin-bottom: 1rem;
+      border-bottom: none;
+    }
+
+    .avatar {
+      display: none !important;
+    }
+
+    .comment-meta {
+      .comment-author {
+        color: black;
+        font-size: 1.25rem;
+
+        .says {
+          display: none !important;
+        }
+      }
+
+      .comment-metadata {
+        font-size: .75rem;
+        color: $theme-primary-light;
+        margin-bottom: 1rem;
+      }
+    }
+
+    //&.depth-1, .depth-2, .depth-3, .depth-4 {
+    .comment-body {
+      border-radius: .75rem;
+      margin-right: .35rem;
+      margin-bottom: .35rem;
+      padding-left: 1rem;
+
+      border-left: 3px solid #dbdaec;
+      border-bottom: 1px solid #dbdaec;
+
+      background-color: rgba(0, 0, 0, 0.025);
+      border-color: rgba(0, 0, 0, 0.1);
+
+      padding: .5rem 1rem .5rem 1rem;
+
+      .reply {
+        text-align: right;
+
+      }
+
+    }
+  }
+
+  #respond {
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0rem;
+    }
+
+    .form-submit {
+      text-align: center;
+
+      #submit {
+        background-color: $theme-primary-light;
+        border-color: $theme-primary-light;
+
+        &:hover {
+          background-color: $theme-primary;
+          border-color: $theme-primary;
+        }
+      }
+    }
+
+  }
+
+
+
+
+}

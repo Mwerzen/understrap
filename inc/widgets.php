@@ -55,20 +55,20 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 			'name'          => __( 'Right Sidebar', 'understrap' ),
 			'id'            => 'right-sidebar',
 			'description'   => 'Right sidebar widget area',
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</aside>',
-			'before_title'  => '<h3 class="widget-title">',
-			'after_title'   => '</h3>',
+            'before_widget' => '<div class="card sidebar-card mb-4">',
+            'after_widget'  => '</div></div>',
+            'before_title'  => '<h5 class="widget-title card-header pt-0 pl-3 pb-1">',
+            'after_title'   => '</h5><div class="card-body pt-2 pl-3 pb-2">',
 		) );
 
 		register_sidebar( array(
 			'name'          => __( 'Left Sidebar', 'understrap' ),
 			'id'            => 'left-sidebar',
 			'description'   => 'Left sidebar widget area',
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</aside>',
-			'before_title'  => '<h3 class="widget-title">',
-			'after_title'   => '</h3>',
+            'before_widget' => '<div class="card sidebar-card mb-4">',
+            'after_widget'  => '</div></div>',
+            'before_title'  => '<h5 class="widget-title card-header pt-0 pl-3 pb-1">',
+            'after_title'   => '</h5><div class="card-body pt-2 pl-3 pb-2">',
 		) );
 
 		register_sidebar( array(

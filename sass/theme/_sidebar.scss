@@ -1,0 +1,40 @@
+
+#right-sidebar, #left-sidebar {
+
+  body {
+    font: $font-body;
+  }
+
+  .sidebar-card {
+    border: none;
+
+
+    #searchform {
+      label {
+        display: none !important;
+      }
+
+      #searchsubmit {
+        background-color: $theme-primary-light;
+        border-color: $theme-primary;
+      }
+
+      #s:focus {
+        box-shadow: none;
+        webkit-box-shadow: none;
+        border-color: $theme-primary-light;
+      }
+    }
+     
+
+    .card-header {
+      background-color: $theme-white;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
