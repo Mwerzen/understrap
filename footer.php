@@ -66,10 +66,10 @@ $container = get_theme_mod( 'understrap_container_type' );
                             </div>
                             <div class="col-md-3"></div>
                             <div class="col-md-5" id="footer-policies">
-                                <a href>Disclaimer</a> &bull;
-                                <a href>Cookie Policy</a> &bull;
-                                <a href>Privacy Policy</a> &bull;
-                                <a href>Terms and Conditions</a>
+                                <a href="<?php echo get_page_link( get_page_by_title( "Disclaimer" )->ID ); ?>">Disclaimer</a> &bull;
+                                <a href="<?php echo get_page_link( get_page_by_title( "Cookie Policy" )->ID ); ?>">Cookie Policy</a> &bull;
+                                <a href="<?php echo get_page_link( get_page_by_title( "Privacy Policy" )->ID ); ?>">Privacy Policy</a> &bull;
+                                <a href="<?php echo get_page_link( get_page_by_title( "Terms and Conditions" )->ID ); ?>">Terms and Conditions</a>
                             </div>
 
                         </div>

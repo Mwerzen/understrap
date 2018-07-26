@@ -24,7 +24,11 @@
 
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+    <div class="row justify-content-center">
+        <div class="pr-2 pl-2 mt-2 mb-2">
+            <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+        </div>
+    </div>
 
 	<div class="entry-content">
 
