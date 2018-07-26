@@ -1,5 +1,4 @@
 #primary {
-  border-right: 1px solid $theme-grey-light;
 
   .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: $font-headline;
@@ -24,11 +23,6 @@
 
   p {
     font-family: $font-body;
-    font-size: $theme-font-size;
     line-height: $theme-line-height;
-  }
-
-  article {
-    margin-bottom: 1.25rem;
   }
 }
