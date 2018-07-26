@@ -29,7 +29,9 @@
 	</header><!-- .entry-header -->
 
     <div class="row justify-content-center">
-	    <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+        <div class="pr-2 pl-2">
+	        <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+        </div>
     </div>
 
 	<div class="entry-content">
