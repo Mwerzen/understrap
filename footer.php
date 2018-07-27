@@ -62,7 +62,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                         <div class="row mt-5 pt-3" id="footer-legal">
                             <div class="col-md-4" id="footer-copy">
-                                Copyright © by Mike Werzen <?php the_time('Y'); ?>
+                                Copyright © by XYZ <?php the_time('Y'); ?>
                             </div>
                             <div class="col-md-3"></div>
                             <div class="col-md-5" id="footer-policies">
