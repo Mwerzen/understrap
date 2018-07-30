@@ -21,6 +21,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
+
+    <?php if ( ! is_user_logged_in() ) : ?>
+        <!-- insert Google Tag Code into theme if desired -->
+    <?php endif; ?>
+
+
 </head>
 
 <body <?php body_class(); ?>>
