@@ -11,8 +11,6 @@ $the_theme = wp_get_theme();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
-
 <div class="wrapper navbar-fixed-bottom" id="wrapper-footer">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
@@ -25,39 +23,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info">
 
-                        <div class="row" id="footer-links">
-                            <div class="col-md-3 mb-3">
-                                <h6 class="mb-1">Airplane Buying Guide</h6>
-                                <ul class="m-0 p-0">
-                                    <li><a href="/sample-page/">Picking the Best Airplane</a></li>
-                                    <li><a href="/">Picking the Best Airplane</a></li>
-                                    <li><a href="/">Picking the Best Airplane</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3 mb-3">
-                                <h6 class="mb-1">Airplane Buying Guide</h6>
-                                <ul class="m-0 p-0">
-                                    <li><a href="/">Picking the Best Airplane</a></li>
-                                    <li><a href="/">Picking the Best Airplane</a></li>
-                                    <li><a href="/">Picking the Best Airplane</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3 mb-3">
-                                <h6 class="mb-1">Airplane Buying Guide</h6>
-                                <ul class="m-0 p-0">
-                                    <li><a href="/">Picking the Best Airplane</a></li>
-                                    <li><a href="/">Picking the Best Airplane</a></li>
-                                    <li><a href="/">Picking the Best Airplane</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3 mb-3">
-                                <h6 class="mb-1">Airplane Buying Guide</h6>
-                                <ul class="m-0 p-0">
-                                    <li><a href="/">Picking the Best Airplane</a></li>
-                                    <li><a href="/">Picking the Best Airplane</a></li>
-                                    <li><a href="/">Picking the Best Airplane</a></li>
-                                </ul>
-                            </div>
+                        <div id="footer-widget-row">
+                            <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
                         </div>
 
                         <div class="row mt-5 pt-3" id="footer-legal">
@@ -91,7 +58,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 <?php if ( ! is_user_logged_in() ) : ?>
-    <!-- insert Google Tag Code into theme if desired -->
+
 <?php endif; ?>
 
 </body>

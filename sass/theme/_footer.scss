@@ -1,11 +1,11 @@
 
 #wrapper-footer {
 
-  background-color: $theme-primary-light;
+  background-color: $theme-primary-light !important;
   font-family: $font-body;
   color: $theme-white-alpha-bright;
 
-  #footer-links, #footer-legal {
+  #footer-widget-row, #footer-legal {
     a {
       color: $theme-white-alpha-bright;
 
@@ -15,17 +15,26 @@
     }
   }
 
-  #footer-links {
+  #footer-widget-row {
 
-    h1, h2, h3, h4, h5, h6 {
-      color: $theme-white;
-      font-weight: bold;
-      font-family: $font-headline;
+    #wrapper-footer-full {
+      background-color: $theme-primary-light;
     }
 
-    ul {
-      list-style-type: none;
-      font-size: .8rem;
+    .footer-widget {
+      color: $theme-white;
+
+      .widget-title, h1, h2, h3, h4, h5, h6 {
+        color: $theme-white;
+        font-weight: bold;
+        font-family: $font-headline;
+      }
+
+      ul {
+        list-style-type: none;
+        font-size: .8rem;
+        padding-left: 0rem;
+      }
     }
 
   }
