@@ -31,6 +31,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <body <?php body_class(); ?>>
 
+<?php if ( ! is_user_logged_in() ) : ?>
+    <!-- insert Google Tag Code into theme if desired -->
+<?php endif; ?>
+
 <div class="hfeed site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
