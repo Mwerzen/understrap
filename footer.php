@@ -89,6 +89,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php wp_footer(); ?>
 
+
+<?php if ( ! is_user_logged_in() ) : ?>
+    <!-- insert Google Tag Code into theme if desired -->
+<?php endif; ?>
+
 </body>
 
 </html>
