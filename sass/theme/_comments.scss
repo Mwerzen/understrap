@@ -74,12 +74,14 @@
       text-align: center;
 
       #submit {
-        background-color: $theme-primary-light;
-        border-color: $theme-primary-light;
+        background-color: $theme-coaccent;
+        border-color: $theme-coaccent;
+        color: $theme-white;
 
         &:hover {
-          background-color: $theme-primary;
-          border-color: $theme-primary;
+          background-color: $theme-coaccent-light;
+          border-color: $theme-coaccent-light;
+          color: $theme-white;
         }
       }
     }

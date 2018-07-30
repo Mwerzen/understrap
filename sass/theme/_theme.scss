@@ -18,3 +18,25 @@ body {
   font-family: $font-body;
   color: $theme-black;
 }
+
+
+.color-primary { background-color: $theme-primary !important; }
+.color-primary-light { background-color: $theme-primary-light !important; }
+.color-coprimary { background-color: $theme-coprimary !important; }
+.color-coprimary-light { background-color: $theme-coprimary-light !important; }
+.color-accent { background-color: $theme-accent !important; }
+.color-accent-light { background-color: $theme-accent-light !important; }
+.color-coaccent { background-color: $theme-coaccent !important; }
+.color-coaccent-light { background-color: $theme-coaccent-light !important; }
+.color-transparent { background-color: $theme-transparent !important; }
+.color-white { background-color: $theme-white !important; }
+
+.text-primary { color: $theme-primary !important; }
+.text-primary-light { color: $theme-primary-light !important; }
+.text-coprimary { color: $theme-coprimary !important; }
+.text-coprimary-light { color: $theme-coprimary-light !important; }
+.text-accent { color: $theme-accent !important; }
+.text-accent-light { color: $theme-accent-light !important; }
+.text-coaccent { color: $theme-coaccent !important; }
+.text-coaccent-light { color: $theme-coaccent-light !important; }
+.text-inverse { color: $theme-white !important;}

@@ -4,4 +4,14 @@
       margin-bottom: 3rem;
     }
   }
+
+  .understrap-read-more-link {
+    background-color: $theme-coaccent;
+    border-color: $theme-coaccent;
+    color: $theme-white;
+
+    &:hover {
+      background-color: $theme-coaccent-light;
+    }
+  }
 }

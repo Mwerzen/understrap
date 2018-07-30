@@ -19,4 +19,12 @@
     }
   }
 
+  .dropdown-menu {
+    background-color: $theme-primary-light;
+
+    a:hover {
+      background-color: $theme-primary-light;
+    }
+  }
+
 }

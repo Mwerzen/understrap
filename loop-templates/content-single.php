@@ -8,13 +8,7 @@
 ?>
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-    <nav aria-label="breadcrumb">
-        <ol id="breadcrumb" class="breadcrumb p-0 mb-0">
-            <li class="breadcrumb-item"><a href="/">Home</a></li>
-            <li class="breadcrumb-item"><a href="<?php echo get_page_link( get_page_by_title( "Blog" )->ID ); ?>">Blog</a></li>
-            <li class="breadcrumb-item"><a href="#"><?php the_category(' '); ?></a></li>
-        </ol>
-    </nav>
+    <?php get_breadcrumb(); ?>
 
 	<header class="entry-header">
 
