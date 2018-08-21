@@ -7,7 +7,6 @@
  * @package understrap
  */
 
-$the_theme = wp_get_theme();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
@@ -40,6 +39,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                             </div>
 
                         </div>
+					<!--	<?php understrap_site_info(); ?> -->
+
 					</div><!-- .site-info -->
 
 			    </div><!--col end -->
