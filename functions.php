@@ -24,6 +24,7 @@ $understrap_includes = array(
 	'/class-wp-bootstrap-navwalker.php',    // Load custom WordPress nav walker.
 	'/woocommerce.php',                     // Load WooCommerce functions.
 	'/editor.php',                          // Load Editor functions.
+    '/strategic-breadcrumbs.php',
 );
 
 foreach ( $understrap_includes as $file ) {
