@@ -5,7 +5,11 @@
  * @package understrap
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
 ?>
+
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
     <?php get_breadcrumb(); ?>

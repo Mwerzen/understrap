@@ -3,16 +3,12 @@ var gulp = require( 'gulp' );
 var plumber = require( 'gulp-plumber' );
 var sass = require( 'gulp-sass' );
 var watch = require( 'gulp-watch' );
-var cssnano = require( 'gulp-cssnano' );
 var rename = require( 'gulp-rename' );
 var concat = require( 'gulp-concat' );
 var uglify = require( 'gulp-uglify' );
-var merge2 = require( 'merge2' );
 var imagemin = require( 'gulp-imagemin' );
 var ignore = require( 'gulp-ignore' );
 var rimraf = require( 'gulp-rimraf' );
-var clone = require( 'gulp-clone' );
-var merge = require( 'gulp-merge' );
 var sourcemaps = require( 'gulp-sourcemaps' );
 var browserSync = require( 'browser-sync' ).create();
 var del = require( 'del' );
@@ -24,10 +20,6 @@ var autoprefixer = require( 'gulp-autoprefixer' );
 // Configuration file to keep your code DRY
 var cfg = require( './gulpconfig.json' );
 var paths = cfg.paths;
-
-gulp.task( 'watch-scss', ['browser-sync'], function() {
-    gulp.watch( paths.sass + '/**/*.scss', ['scss-for-dev'] );
-});
 
 // Run:
 // gulp sass
@@ -129,11 +121,11 @@ gulp.task( 'browser-sync', function() {
 // Run:
 // gulp watch-bs
 // Starts watcher with browser-sync. Browser-sync reloads page automatically on your browser
-gulp.task( 'watch-bs', ['browser-sync', 'watch', 'scripts'], function() { 
+gulp.task( 'watch-bs', ['browser-sync', 'watch', 'scripts'], function() {
 } );
 
-// Run: 
-// gulp scripts. 
+// Run:
+// gulp scripts.
 // Uglifies and concat all JS files into one
 gulp.task( 'scripts', function() {
     var scripts = [
@@ -197,13 +189,6 @@ gulp.task( 'copy-assets', function() {
 // _s JS files into /src/js
     gulp.src( paths.node + 'undescores-for-npm/js/skip-link-focus-fix.js' )
         .pipe( gulp.dest( paths.dev + '/js' ) );
-
-// Copy Popper JS files
-    gulp.src( paths.node + 'popper.js/dist/umd/popper.min.js' )
-        .pipe( gulp.dest( paths.js + paths.vendor ) );
-    gulp.src( paths.node + 'popper.js/dist/umd/popper.js' )
-        .pipe( gulp.dest( paths.js + paths.vendor ) );
-    return stream;
 });
 
 // Deleting the files distributed by the copy-assets task
@@ -239,3 +224,8 @@ gulp.task( 'dist-product', ['clean-dist-product'], function() {
 gulp.task( 'clean-dist-product', function() {
   return del( [paths.distprod + '/**'] );
 } );
+
+// Run:
+// gulp
+// Starts watcher (default task)
+gulp.task('default', ['watch']);
