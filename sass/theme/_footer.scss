@@ -1,7 +1,7 @@
 
 #wrapper-footer {
 
-  background-color: $theme-primary-light !important;
+  background-color: $theme-primary-semi-dark !important;
   font-family: $font-body;
   color: $theme-white-alpha-bright;
 
@@ -18,16 +18,16 @@
   #footer-widget-row {
 
     #wrapper-footer-full {
-      background-color: $theme-primary-light;
+      background-color: $theme-primary-semi-dark;
     }
 
     .footer-widget {
       color: $theme-white;
 
       .widget-title, h1, h2, h3, h4, h5, h6 {
-        color: $theme-white;
+        color: $theme-coprimary-light;
         font-weight: bold;
-        font-family: $font-headline;
+        font-family: $font-accent;
       }
 
       ul {
@@ -40,8 +40,8 @@
   }
 
   #footer-legal {
-    border-top: 1px solid $theme-grey-light;
+    border-top: 1px solid $theme-primary-light;
     font-size: .8rem;
-    color: $theme-white-alpha-bright;
+    color: $theme-primary-ultra-light;
   }
 }

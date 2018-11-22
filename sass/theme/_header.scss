@@ -1,7 +1,7 @@
 
 
 #wrapper-navbar {
-  background-color: $theme-primary-light !important;
+  background-color: $theme-primary-dark !important;
   font-family: $font-accent;
   font-size: 1.2rem;
 
@@ -20,11 +20,18 @@
   }
 
   .dropdown-menu {
-    background-color: $theme-primary-light;
+    background-color: $theme-primary-dark;
 
     a:hover {
       background-color: $theme-primary-light;
     }
+  }
+
+  &:after {
+    content: "";
+    background-color: grey;
+    margin-bottom: 10px;
+
   }
 
 }

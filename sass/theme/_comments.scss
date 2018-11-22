@@ -36,7 +36,7 @@
 
       .comment-metadata {
         font-size: .75rem;
-        color: $theme-primary-light;
+        color: $theme-primary-semi-light;
         margin-bottom: 1rem;
       }
     }
@@ -47,7 +47,7 @@
 
       border: 1px solid $theme-grey-light;
       border-left-width: .2rem;
-      border-left-color: $theme-primary-light !important;
+      border-left-color: $theme-primary-medium !important;
       border-radius: .35rem;
 
       padding: .5rem 1rem .5rem 1rem;
@@ -74,13 +74,12 @@
       text-align: center;
 
       #submit {
-        background-color: $theme-coaccent;
-        border-color: $theme-coaccent;
+        background-color: $theme-primary-medium;
+        border-color: $theme-primary-medium;
         color: $theme-white;
 
         &:hover {
-          background-color: $theme-coaccent-light;
-          border-color: $theme-coaccent-light;
+          background-color: $theme-primary-semi-dark;
           color: $theme-white;
         }
       }

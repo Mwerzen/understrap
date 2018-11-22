@@ -1,17 +1,28 @@
 //Global Settings
 
 a {
-  color: $theme-primary;
+  color: $theme-primary-medium;
 
   &:hover {
-    color: $theme-primary-light;
+    color: $theme-primary-semi-dark;
   }
+}
+ 
+.h1, .h2, h1, h2 {
+  color: $theme-primary-semi-dark;
+}
+
+.h3, .h4, h3, h4 {
+  color: $theme-primary-medium;
+}
+
+.h5, .h6, h5, h6 {
+  color: $theme-coprimary-medium;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: $font-headline;
   font-weight: bold;
-  color: $theme-primary;
 }
 
 body {
@@ -20,23 +31,25 @@ body {
 }
 
 
-.color-primary { background-color: $theme-primary !important; }
+.color-primary-dark { background-color: $theme-primary-dark !important; }
+.color-primary-semi-dark { background-color: $theme-primary-semi-dark !important; }
+.color-primary-medium { background-color: $theme-primary-medium !important; }
+.color-primary-semi-light { background-color: $theme-primary-semi-light !important; }
 .color-primary-light { background-color: $theme-primary-light !important; }
-.color-coprimary { background-color: $theme-coprimary !important; }
-.color-coprimary-light { background-color: $theme-coprimary-light !important; }
+.color-primary-ultra-light { background-color: $theme-primary-ultra-light !important; }
+.color-coprimary-dark { background-color: $theme-coprimary-dark !important; }
+.color-coprimary-medium { background-color: $theme-coprimary-medium !important; }
+.color-coprimary-light{ background-color: $theme-coprimary-light !important; }
 .color-accent { background-color: $theme-accent !important; }
 .color-accent-light { background-color: $theme-accent-light !important; }
-.color-coaccent { background-color: $theme-coaccent !important; }
-.color-coaccent-light { background-color: $theme-coaccent-light !important; }
 .color-transparent { background-color: $theme-transparent !important; }
 .color-white { background-color: $theme-white !important; }
+.color-gradient { background: $primary-gradient; }
 
-.text-primary { color: $theme-primary !important; }
+.text-primary { color: $theme-primary-medium !important; }
 .text-primary-light { color: $theme-primary-light !important; }
-.text-coprimary { color: $theme-coprimary !important; }
-.text-coprimary-light { color: $theme-coprimary-light !important; }
+.text-coprimary { color: $theme-primary-semi-light !important; }
+.text-coprimary-light { color: $theme-primary-ultra-light !important; }
 .text-accent { color: $theme-accent !important; }
 .text-accent-light { color: $theme-accent-light !important; }
-.text-coaccent { color: $theme-coaccent !important; }
-.text-coaccent-light { color: $theme-coaccent-light !important; }
 .text-inverse { color: $theme-white !important;}

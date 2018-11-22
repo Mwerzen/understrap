@@ -5,13 +5,20 @@
     }
   }
 
+  .h2, h2 {
+    a {
+      color: $theme-primary-semi-dark;
+    }
+
+  }
+
   .understrap-read-more-link {
-    background-color: $theme-coaccent;
-    border-color: $theme-coaccent;
+    background-color: $theme-primary-medium;
+    border-color: $theme-primary-medium;
     color: $theme-white;
 
     &:hover {
-      background-color: $theme-coaccent-light;
+      background-color: $theme-primary-semi-dark;
     }
   }
 }
