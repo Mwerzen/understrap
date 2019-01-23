@@ -52,18 +52,21 @@ if ( post_password_required() ) {
 		</h4><!-- .comments-title -->
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through. ?>
-			
+
 			<nav class="comment-navigation" id="comment-nav-above">
-				
+
 				<h1 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'understrap' ); ?></h1>
-				
+
 				<?php if ( get_previous_comments_link() ) { ?>
-					<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments',
-					'understrap' ) ); ?></div>
-				<?php }
-					if ( get_next_comments_link() ) { ?>
-					<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;',
-					'understrap' ) ); ?></div>
+					<div class="nav-previous">
+						<?php previous_comments_link( __( '&larr; Older Comments', 'understrap' ) ); ?>
+					</div>
+				<?php } ?>
+
+				<?php	if ( get_next_comments_link() ) { ?>
+					<div class="nav-next">
+						<?php next_comments_link( __( 'Newer Comments &rarr;', 'understrap' ) ); ?>
+					</div>
 				<?php } ?>
 
 			</nav><!-- #comment-nav-above -->
@@ -73,31 +76,36 @@ if ( post_password_required() ) {
 		<ol class="comment-list">
 
 			<?php
-			wp_list_comments( array(
-				'style'      => 'ol',
-				'short_ping' => true,
-			) );
+			wp_list_comments(
+				array(
+					'style'      => 'ol',
+					'short_ping' => true,
+				)
+			);
 			?>
 
 		</ol><!-- .comment-list -->
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through. ?>
-			
+
 			<nav class="comment-navigation" id="comment-nav-below">
-				
+
 				<h1 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'understrap' ); ?></h1>
-				
+
 				<?php if ( get_previous_comments_link() ) { ?>
-					<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments',
-					'understrap' ) ); ?></div>
-				<?php }
-					if ( get_next_comments_link() ) { ?>
-					<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;',
-					'understrap' ) ); ?></div>
+					<div class="nav-previous">
+						<?php previous_comments_link( __( '&larr; Older Comments', 'understrap' ) ); ?>
+					</div>
+				<?php } ?>
+
+				<?php	if ( get_next_comments_link() ) { ?>
+					<div class="nav-next">
+						<?php next_comments_link( __( 'Newer Comments &rarr;', 'understrap' ) ); ?>
+					</div>
 				<?php } ?>
 
 			</nav><!-- #comment-nav-below -->
-			
+
 		<?php endif; // check for comment navigation. ?>
 
 	<?php endif; // endif have_comments(). ?>
