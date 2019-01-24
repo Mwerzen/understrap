@@ -16,6 +16,9 @@
 //$theme-coaccent: #20418E;
 //$theme-coaccent-light: #3B5798;
 
+$alpha-bright: .8;
+$alpha-dim: .6;
+$alpha-dark: .4;
 
 $theme-primary-dark: #203651;
 $theme-primary-semi-dark: #274463;
@@ -26,17 +29,21 @@ $theme-primary-ultra-light: #e6e9fc;
 $theme-coprimary-dark: #161b45;
 $theme-coprimary-medium: #454d8e;
 $theme-coprimary-light: #899ff1;
-$theme-accent: #f17630;
-$theme-accent-light: #faad77;
+$theme-accent: #ed1c24;
+$theme-accent-light: #ff4846;
  
 $theme-grey: grey;
 $theme-grey-mid: lightgrey;
 $theme-grey-light: #ececec;
+
 $theme-white: #ffffff;
-$theme-white-alpha-bright: rgba(255, 255, 255, .8);
-$theme-white-alpha-dim: rgba(255, 255, 255, .6);
+$theme-white-alpha-bright: rgba(255, 255, 255, $alpha-bright);
+$theme-white-alpha-dim: rgba(255, 255, 255, $alpha-dim);
+$theme-alpha-grey: rgba(255, 255, 255, $alpha-dark);
+
 $theme-shadow: rgba(0, 0, 0, .1);
 $theme-transparent: rgba(0, 0, 0, 0);
+
 $theme-black: #00040A;
 
 // Fonts
@@ -44,16 +51,21 @@ $theme-black: #00040A;
 $font-headline: 'Roboto Slab', serif;
 $font-body: 'Open Sans', sans-serif;
 $font-accent: 'Roboto Condensed', sans-serif;
+
 $theme-font-size: 1.08rem;
 $theme-line-height: 1.6rem;
 
 // Images
 $primary-gradient: linear-gradient(to bottom, $theme-primary-dark 66%, $theme-primary-semi-dark 67%, $theme-primary-semi-dark 100%);
+$gradient-radial-semi-dark: radial-gradient(circle, $theme-primary-medium, $theme-primary-semi-dark);
+$gradient-radial-med-dark: radial-gradient(circle, $theme-primary-medium, $theme-primary-dark);
+$gradient-radial-semi-dark-dark: radial-gradient(circle, $theme-primary-semi-dark, $theme-primary-dark);
 
 // Misc
 $breadcrumb-divider: quote(">");
 
 $theme-primary: $theme-primary-medium;
+
 // Override Bootstrap Colors
 $primary: $theme-primary-medium;
 $secondary: $theme-primary-semi-light;

@@ -43,13 +43,161 @@ body {
 .color-accent { background-color: $theme-accent !important; }
 .color-accent-light { background-color: $theme-accent-light !important; }
 .color-transparent { background-color: $theme-transparent !important; }
+.color-grey { background-color: $theme-grey !important; }
+.color-grey-medium { background-color: $theme-grey-mid !important; }
+.color-grey-light { background-color: $theme-grey-light !important; }
 .color-white { background-color: $theme-white !important; }
-.color-gradient { background: $primary-gradient; }
 
-.text-primary { color: $theme-primary-medium !important; }
-.text-primary-light { color: $theme-primary-light !important; }
-.text-coprimary { color: $theme-primary-semi-light !important; }
-.text-coprimary-light { color: $theme-primary-ultra-light !important; }
-.text-accent { color: $theme-accent !important; }
-.text-accent-light { color: $theme-accent-light !important; }
-.text-inverse { color: $theme-white !important;}
+.color-gradient { background-color: $theme-primary-dark; background: $primary-gradient; }
+.color-radial-gradient-semi-dark {  background-color: $theme-primary-semi-dark; background-image: $gradient-radial-semi-dark; }
+.color-radial-gradient-med-dark {  background-color: $theme-primary-dark; background-image: $gradient-radial-med-dark; }
+.color-radial-gradient-semi-dark-dark {  background-color: $theme-primary-semi-dark; background-image: $gradient-radial-semi-dark-dark; }
+
+.text-primary * { color: $theme-primary-medium !important; }
+.text-primary-light * { color: $theme-primary-light !important; }
+.text-coprimary * { color: $theme-primary-semi-light !important; }
+.text-coprimary-light * { color: $theme-primary-ultra-light !important; }
+.text-accent * { color: $theme-accent !important; }
+.text-accent-light * { color: $theme-accent-light !important; }
+.text-inverse * { color: $theme-white !important;}
+
+.text-extra-small { font-size: ($theme-font-size * .6); }
+.text-small { font-size: ($theme-font-size * .75); }
+.text-normal { font-size: $theme-font-size;}
+.text-large { font-size: ($theme-font-size * 1.25); }
+.text-extra-large { font-size: ($theme-font-size * 1.4); }
+
+.unstyled-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bordered-container {
+  border-left: 1px solid $theme-grey;
+  border-right: 1px solid $theme-grey;
+}
+
+.bottom-border-alpha {
+  border-bottom: 1px solid $theme-grey;
+}
+
+.cta-button {
+  background-color: $theme-accent-light;
+  border-color: darken($theme-accent-light, 15%);
+  border-width: 1px;
+
+  &:hover {
+    color: white;
+    background-color: darken($theme-accent-light, 10%);
+  }
+
+  a:hover {
+    color: white;
+  }
+}
+
+.hide-overflow {
+  overflow: hidden;
+}
+
+.cta-button-dark {
+  background-color: darken($theme-accent, 10%);
+  border-color: darken($theme-accent, 15%);
+  border-width: 1px;
+
+  &:hover {
+    color: white;
+    background-color: $theme-accent;
+  }
+
+  a:hover {
+    color: white;
+  }
+}
+
+.greyscale-image {
+  filter: grayscale(100%) brightness(.5) contrast(1.1);
+}
+
+.hover-shadow {
+
+}
+
+.zoom {
+  backface-visibility: hidden;
+  transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.022);
+    box-shadow: 0 0.5rem 1rem $theme-shadow !important;
+  }
+}
+
+.text-shadow-black * {
+  text-shadow: 1px 1px 0 #000,
+  -1px 1px 0 #000,
+  1px -1px 0 #000,
+  -1px -1px 0 #000,
+  0px 1px 0 #000,
+  0px -1px 0 #000,
+  -1px 0px 0 #000,
+  1px 0px 0 #000,
+  2px 2px 0 #000,
+  -2px 2px 0 #000,
+  2px -2px 0 #000,
+  -2px -2px 0 #000,
+  0px 2px 0 #000,
+  0px -2px 0 #000,
+  -2px 0px 0 #000,
+  2px 0px 0 #000,
+  1px 2px 0 #000,
+  -1px 2px 0 #000,
+  1px -2px 0 #000,
+  -1px -2px 0 #000,
+  2px 1px 0 #000,
+  -2px 1px 0 #000,
+  2px -1px 0 #000,
+  -2px -1px 0 #000;
+
+}
+
+.accordion_sequence {
+
+  a {
+
+
+    h1, h2, h3, h4, h5, h6 {
+
+      font-family: $font-accent;
+      color: $theme-primary;
+
+      &:hover {
+        color: $theme-primary-light;
+      }
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .fa-angle-down {
+    float: right;
+  }
+
+  .card {
+    border: none;
+    border-bottom: 1px solid $theme-shadow;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .card-header {
+    background-color: $theme-transparent;
+    border: none;
+  }
+
+}
