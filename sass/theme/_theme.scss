@@ -125,7 +125,7 @@ body {
 }
 
 .zoom {
-  backface-visibility: hidden;
+  //backface-visibility: hidden;
   transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
 
   &:hover {

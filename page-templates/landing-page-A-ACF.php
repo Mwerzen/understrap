@@ -16,18 +16,18 @@ get_header();
 ?>
 
     <!-- Hero -->
-    <div class="wrapper py-5 color-radial-gradient-semi-dark text-shadow-black text-inverse shadow">
+    <div class="wrapper py-5 color-radial-gradient-semi-dark text-inverse shadow">
         <div class="container py-5">
             <div class="row justify-content-between align-items-center py-5">
                 <div class="col-md-7">
                     <div class="row">
-                        <div class="col-md-12 align-items-center py-3">
+                        <div class="col-md-12 align-items-center py-3 text-shadow-black">
                             <?php the_field('hero-headline'); ?>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12 align-items-center pb-3">
-                            <a href="<?php the_field('cta-url'); ?>" class="btn cta-button-dark text-large"><h3
+                            <a href="<?php the_field('cta-url'); ?>" class="btn cta-button-dark text-large zoom"><h3
                                         class="py-0 my-0"><?php the_field('hero-cta'); ?></h3></a>
                         </div>
                     </div>
@@ -62,34 +62,34 @@ get_header();
                 </div>
             </div>
             <div class="row justify-content-between align-items-stretch pb-3">
-                <div class="d-flex col-md-4 px-2">
+                <div class="col-md-4 px-2">
                     <div class="card card-default zoom">
                         <div class="card-body"><?php the_field('six-cards-1'); ?></div>
                     </div>
                 </div>
-                <div class="d-flex col-md-4 px-2">
+                <div class="col-md-4 px-2">
                     <div class="card card-default zoom">
                         <div class="card-body"><?php the_field('six-cards-2'); ?></div>
                     </div>
                 </div>
-                <div class="d-flex col-md-4 px-2">
+                <div class="col-md-4 px-2">
                     <div class="card card-default zoom">
                         <div class="card-body"><?php the_field('six-cards-3'); ?></div>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-between align-items-stretch pb-5">
-                <div class="d-flex col-md-4 px-2">
+                <div class="col-md-4 px-2">
                     <div class="card card-default zoom">
                         <div class="card-body"><?php the_field('six-cards-4'); ?></div>
                     </div>
                 </div>
-                <div class="d-flex col-md-4 px-2">
+                <div class="col-md-4 px-2">
                     <div class="card card-default zoom">
                         <div class="card-body"><?php the_field('six-cards-5'); ?></div>
                     </div>
                 </div>
-                <div class="d-flex col-md-4 px-2">
+                <div class="col-md-4 px-2">
                     <div class="card card-default zoom">
                         <div class="card-body"><?php the_field('six-cards-6'); ?></div>
                     </div>
@@ -108,7 +108,7 @@ get_header();
                     <h3 class="mr-3 mb-0 cta_header"><?php the_field('cta-lead-A'); ?></h3>
                 </div>
                 <div class="col-md-3 align-items-center text-center py-3">
-                    <a href="<?php the_field('cta-url'); ?>" class="btn cta-button text-large"><h3
+                    <a href="<?php the_field('cta-url'); ?>" class="btn cta-button-dark text-large  zoom"><h3
                                 class="py-0 my-0"><?php the_field('cta-text-A'); ?></h3></a>
                 </div>
                 <div class="col-md-3 align-items-center text-center">
@@ -178,7 +178,7 @@ get_header();
                     <h3 class="mr-3 mb-0 cta_header"><?php the_field('cta-lead-B'); ?></h3>
                 </div>
                 <div class="col-md-3 align-items-center text-center py-3">
-                    <a href="<?php the_field('cta-url'); ?>" class="btn cta-button text-large"><h3
+                    <a href="<?php the_field('cta-url'); ?>" class="btn cta-button-dark text-large zoom"><h3
                                 class="py-0 my-0"><?php the_field('cta-text-B'); ?></h3></a>
                 </div>
                 <div class="col-md-3 align-items-center text-center">
@@ -196,29 +196,29 @@ get_header();
                 </div>
             </div>
             <div class="row justify-content-center pb-3">
-                <div class="d-flex col-md-4 px-2">
+                <div class="col-md-4 px-2">
                     <div class="card card-default zoom">
                         <div class="card-body"><?php the_field('five-cards-1'); ?></div>
                     </div>
                 </div>
-                <div class="d-flex col-md-4 px-2">
+                <div class="col-md-4 px-2">
                     <div class="card card-default zoom">
                         <div class="card-body"><?php the_field('five-cards-2'); ?></div>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-between pb-3">
-                <div class="d-flex col-md-4 px-2">
+                <div class="col-md-4 px-2">
                     <div class="card card-default zoom">
                         <div class="card-body"><?php the_field('five-cards-3'); ?></div>
                     </div>
                 </div>
-                <div class="d-flex col-md-4 px-2">
+                <div class="col-md-4 px-2">
                     <div class="card card-default zoom">
                         <div class="card-body"><?php the_field('five-cards-4'); ?></div>
                     </div>
                 </div>
-                <div class="d-flex col-md-4 px-2">
+                <div class="col-md-4 px-2">
                     <div class="card card-default zoom">
                         <div class="card-body"><?php the_field('five-cards-5'); ?></div>
                     </div>
@@ -250,17 +250,17 @@ get_header();
                 </div>
             </div>
             <div class="row justify-content-between align-items-stretch pb-5">
-                <div class="d-flex col-md-4">
+                <div class="col-md-4">
                     <div class="card card-default zoom">
                         <div class="card-body"><?php the_field('pricing-cards-1'); ?></div>
                     </div>
                 </div>
-                <div class="d-flex col-md-4">
+                <div class="col-md-4">
                     <div class="card card-default zoom">
                         <div class="card-body"><?php the_field('pricing-cards-2'); ?></div>
                     </div>
                 </div>
-                <div class="d-flex col-md-4">
+                <div class="col-md-4">
                     <div class="card card-default zoom">
                         <div class="card-body"><?php the_field('pricing-cards-3'); ?></div>
                     </div>
@@ -279,7 +279,7 @@ get_header();
                     <h3 class="mr-3 mb-0 cta_header"><?php the_field('cta-lead-C'); ?></h3>
                 </div>
                 <div class="col-md-3 align-items-center text-center py-3">
-                    <a href="<?php the_field('cta-url'); ?>" class="btn cta-button text-large"><h3
+                    <a href="<?php the_field('cta-url'); ?>" class="btn cta-button-dark text-large zoom"><h3
                                 class="py-0 my-0"><?php the_field('cta-text-C'); ?></h3></a>
                 </div>
                 <div class="col-md-3 align-items-center text-center">
