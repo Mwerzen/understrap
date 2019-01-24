@@ -16,7 +16,7 @@ get_header();
 ?>
 
     <!-- Hero -->
-    <div class="wrapper py-5 color-radial-gradient-semi-dark text-shadow-black text-inverse">
+    <div class="wrapper py-5 color-radial-gradient-semi-dark text-shadow-black text-inverse shadow">
         <div class="container py-5">
             <div class="row justify-content-between align-items-center py-5">
                 <div class="col-md-7">
@@ -40,7 +40,7 @@ get_header();
     </div>
 
     <!-- Lead w/ Left Image -->
-    <div class="wrapper ">
+    <div class="wrapper py-0">
         <div class="container  py-5 ">
             <div class="row justify-content-between align-items-center py-5">
                 <div class="col-md-5">
@@ -55,10 +55,10 @@ get_header();
 
     <!-- 6 Card -->
     <div class="wrapper py-0 color-grey-light">
-        <div class="container  py-5 ">
-            <div class="row justify-content-between text-center align-items-stretch pt-5 pb-3">
+        <div class="container  pt-2 pb-5 ">
+            <div class="row justify-content-between text-center align-items-stretch pt-5 pb-4">
                 <div class="col-md-12">
-                    <?php the_field('six-card-text'); ?>
+                    <?php the_field('six-cards-text'); ?>
                 </div>
             </div>
             <div class="row justify-content-between align-items-stretch pb-3">
@@ -78,7 +78,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-between align-items-stretch pb-3">
+            <div class="row justify-content-between align-items-stretch pb-5">
                 <div class="d-flex col-md-4 px-2">
                     <div class="card card-default zoom">
                         <div class="card-body"><?php the_field('six-cards-4'); ?></div>
@@ -105,11 +105,11 @@ get_header();
                 <div class="col-md-3 align-items-center text-center">
                 </div>
                 <div class="col-md-3 align-items-center text-center py-3">
-                    <h3 class="mr-3 mb-0 cta_header"><?php the_field('body-cta-lead-A'); ?></h3>
+                    <h3 class="mr-3 mb-0 cta_header"><?php the_field('cta-lead-A'); ?></h3>
                 </div>
                 <div class="col-md-3 align-items-center text-center py-3">
                     <a href="<?php the_field('cta-url'); ?>" class="btn cta-button text-large"><h3
-                                class="py-0 my-0"><?php the_field('body-cta-text-A'); ?></h3></a>
+                                class="py-0 my-0"><?php the_field('cta-text-A'); ?></h3></a>
                 </div>
                 <div class="col-md-3 align-items-center text-center">
                 </div>
@@ -119,14 +119,14 @@ get_header();
 
     <!-- Squeeze start -->
     <div class="wrapper py-0">
-        <div class="container px-0 ">
+        <div class="container px-0 py-0">
             <div class="row justify-content-center px-5">
                 <div class="col-md-12 bordered-container shadow">
 
                     <!-- Squeeze Body A -->
-                    <div class="wrapper ">
+                    <div class="wrapper py-0">
                         <div class="container py-5 ">
-                            <div class="row justify-content-between align-items-center py-5">
+                            <div class="row justify-content-between align-items-center">
                                 <div class="col-md-12">
                                     <?php the_field('squeeze-text-A'); ?>
                                 </div>
@@ -135,9 +135,9 @@ get_header();
                     </div>
 
                     <!-- Squeeze Body C w/ Right Image -->
-                    <div class="wrapper ">
+                    <div class="wrapper py-0">
                         <div class="container  py-5 ">
-                            <div class="row justify-content-between align-items-center py-5">
+                            <div class="row justify-content-between align-items-center">
                                 <div class="col-md-6">
                                     <?php the_field('squeeze-text-B'); ?>
                                 </div>
@@ -149,9 +149,9 @@ get_header();
                     </div>
 
                     <!-- Squeeze Body C w/ Left Image -->
-                    <div class="wrapper ">
-                        <div class="container  py-5 ">
-                            <div class="row justify-content-between align-items-center py-5">
+                    <div class="wrapper py-0">
+                        <div class="container  py-5">
+                            <div class="row justify-content-between align-items-center">
                                 <div class="col-md-5">
                                     <img class="img-fluid rounded shadow" src="<?php the_field('squeeze-image-C'); ?>"/>
                                 </div>
@@ -175,11 +175,11 @@ get_header();
                 <div class="col-md-3 align-items-center text-center">
                 </div>
                 <div class="col-md-3 align-items-center text-center py-3">
-                    <h3 class="mr-3 mb-0 cta_header"><?php the_field('body-cta-lead-B'); ?></h3>
+                    <h3 class="mr-3 mb-0 cta_header"><?php the_field('cta-lead-B'); ?></h3>
                 </div>
                 <div class="col-md-3 align-items-center text-center py-3">
                     <a href="<?php the_field('cta-url'); ?>" class="btn cta-button text-large"><h3
-                                class="py-0 my-0"><?php the_field('body-cta-text-B'); ?></h3></a>
+                                class="py-0 my-0"><?php the_field('cta-text-B'); ?></h3></a>
                 </div>
                 <div class="col-md-3 align-items-center text-center">
                 </div>
@@ -188,9 +188,9 @@ get_header();
     </div>
 
     <!-- Five Card -->
-    <div class="wrapper color-grey-light">
-        <div class="container align-items-stretch  py-5 ">
-            <div class="row justify-content-between text-center align-items-stretch pt-5 pb-3">
+    <div class="wrapper color-grey-light py-0">
+        <div class="container align-items-stretch  pt-2 pb-5 ">
+            <div class="row justify-content-between text-center align-items-stretch pt-5 pb-4">
                 <div class="col-md-12">
                     <?php the_field('five-cards-text'); ?>
                 </div>
@@ -228,8 +228,8 @@ get_header();
     </div>
 
     <!-- Guarantee w/ Right Image -->
-    <div class="wrapper ">
-        <div class="container  py-5 ">
+    <div class="wrapper py-0">
+        <div class="container pt-2 pb-5 ">
             <div class="row justify-content-between align-items-center py-5">
                 <div class="col-md-6">
                     <?php the_field('guarantee-text'); ?>
@@ -242,11 +242,11 @@ get_header();
     </div>
 
     <!-- Pricing -->
-    <div class="wrapper color-grey-light">
-        <div class="container  py-5 ">
-            <div class="row justify-content-between text-center align-items-stretch pt-5 pb-3">
+    <div class="wrapper color-grey-light py-0">
+        <div class="container  pt-2 pb-5 ">
+            <div class="row justify-content-between text-center align-items-stretch pt-5 pb-4">
                 <div class="col-md-12">
-                    <?php the_field('pricing-text'); ?>
+                    <?php the_field('pricing-cards-text'); ?>
                 </div>
             </div>
             <div class="row justify-content-between align-items-stretch pb-5">
@@ -276,11 +276,11 @@ get_header();
                 <div class="col-md-3 align-items-center text-center">
                 </div>
                 <div class="col-md-3 align-items-center text-center py-3">
-                    <h3 class="mr-3 mb-0 cta_header"><?php the_field('body-cta-lead-C'); ?></h3>
+                    <h3 class="mr-3 mb-0 cta_header"><?php the_field('cta-lead-C'); ?></h3>
                 </div>
                 <div class="col-md-3 align-items-center text-center py-3">
                     <a href="<?php the_field('cta-url'); ?>" class="btn cta-button text-large"><h3
-                                class="py-0 my-0"><?php the_field('body-cta-text-C'); ?></h3></a>
+                                class="py-0 my-0"><?php the_field('cta-text-C'); ?></h3></a>
                 </div>
                 <div class="col-md-3 align-items-center text-center">
                 </div>
@@ -289,8 +289,8 @@ get_header();
     </div>
 
     <!-- About w/ Left Image -->
-    <div class="wrapper ">
-        <div class="container  py-5 ">
+    <div class="wrapper py-0">
+        <div class="container  pt-2 pb-5 ">
             <div class="row justify-content-between align-items-center py-5">
                 <div class="col-md-5">
                     <img class="img-fluid rounded shadow" src="<?php the_field('about-image'); ?>"/>
@@ -303,8 +303,8 @@ get_header();
     </div>
 
     <!-- Form  -->
-    <div class="wrapper">
-        <div class="container  py-5 ">
+    <div class="wrapper py-0">
+        <div class="container  pt-2 pb-5">
             <div class="row justify-content-between py-5">
                 <div class="col-md-5">
                     <?php the_field('split-copy-column'); ?>
@@ -317,9 +317,9 @@ get_header();
     </div>
 
     <!-- FAQs -->
-    <div class="wrapper ">
-        <div class="container  py-5 ">
-            <div class="row justify-content-between align-items-center text-center py-3 my-5 ">
+    <div class="wrapper pt-3 pb-5">
+        <div class="container  pt-2 pb-5 ">
+            <div class="row justify-content-between align-items-center text-center pt-3 pb-0 my-3 ">
                 <div class="col-md-12">
                     <?php the_field('faqs-title'); ?>
                 </div>
